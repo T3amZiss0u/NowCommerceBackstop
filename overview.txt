@@ -1,0 +1,31 @@
+I am aiming to create a simple program which will replace the failsafe
+function that BlueCart has been serving.  As we phase out the BlueCart
+program and add in Now Commerce in its place, it will be necessary for a new
+procedure to be put in place to make sure that all scheduled deliveries are
+included in the next day's route.
+
+Long term, the basic information collected to fuel updates should be
+expanded to offer the ability to pick/pack based on the data exports.
+Currently though, that is not possible because the NowCommerce data is
+rather limited in scope.
+
+Primary functions of this program's first build will be:
+-Import data regarding new orders that have been placed since the last update
+-Format the new orders
+    -Specifically to pull out the customer's name from the address
+-Append new orders to an existing list of orders
+-Archive orders more than a couple days old to prevent unwieldy files
+-Allow for some searching by date or by customer for future orders
+
+Because of immediate necessity, I am starting with this module but it is
+intended to ultimately become part of a suite which will allow for more
+effective management of the production/warehousing/distribution of products
+in the Snowing In Space ecosystem.  Later on, it would be nice to make it a
+standalone system which will be available for any company (particularly
+small businesses) that need a usable system without the high price tag
+offered by other products on the market without having to patch together
+many different products.
+
+There will undoubtedly be a number of inefficiencies in the way I approach
+this project as it's my first independent attempt at anything on this scale
+and I invite any and all feedback from anyone who stumbles upon to code
